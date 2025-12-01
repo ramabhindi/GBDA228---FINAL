@@ -82,8 +82,33 @@
     }
     .reviewcard {
       background-color: #454545;
-      padding: 40px 20px;
+      padding: 25px 20px;
       border-radius: 12px;
+      text-align: LEFT;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+    }
+    .reviewcard img {
+      width: 60px;
+      height: 60px;
+      border-radius: 30px;
+      margin-bottom: 10px;
+    }
+    .reviewcard h4 {
+      font-size: 18px;
+      font-weight: 600px;
+      margin: 0;
+      font-family: 'Source Serif Pro', serif;
+    }
+    .reviewcard .profession {
+      font-size: 14px;
+      color: #cccccc;
+      margin: 3px 0 10px 0;
+    }
+    .reviewcard .reviewtext {
+      font-size: 16px;
+      color: #ffffff;
     }
   /*WAT WE DO" section, splits into 2 sections. Text on left, img on right*/
     .twocolumn {
@@ -162,12 +187,28 @@
     <section id="reviews">
       <h2>Reviews</h2>
 <div class="reviewgrid">
-  <div class="reviewcard">“I’ve profited every single  time, RB is a real locksmith.”</div>
-  <div class="reviewcard">“I only get my picks from RB locks. Genuine bets.”</div>
-  <div class="reviewcard">“I shouldn’t have bet against RB locks, learned the hard way.”</div>
-      </div>
-    </section>
-    
+<!-- Homemademiya Reviewcard -->
+  <div class="reviewcard">
+    <img src="homemademiya.jpg" alt="homemademiya profilepic">
+    <h4>Homemademiya</h4>
+    <p class="profession">Mechanic</p>
+    <p class="reviewtext">“I’ve profited every single  time, RB is a real locksmith.”</p>
+    </div>
+<!-- Ultrrviolet Review Card -->
+  <div class="reviewcard">
+  <img src="uvlocks.jpg" alt="ultrrviolet profilepic">
+    <h4>Ultrrviolet</h4>
+    <p class="profession">Producer, Songwriter</p>
+    <p class="reviewtext">“I’ve profited every single  time, RB is a real locksmith.”</p>
+    </div>
+<!-- TheZaanman Review Card -->
+  <div class="reviewcard">
+  <img src="zaano.jpg" alt="TheZaanman profilepic">
+    <h4>TheZaanMan</h4>
+    <p class="profession">Student, Health Expert</p>
+    <p class="reviewtext">“I’ve profited every single  time, RB is a real locksmith.”</p>
+    </div>
+  </section>
 <!-- "WHAT WE DO" section. 2 columns, photo of pantoja on the right, text left. -->
     <section id="what-we-do" class="twocolumn">
       <div class="leftcolumn">
