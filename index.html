@@ -81,19 +81,22 @@
        margin-top: 20px;
     }
     .reviewcard {
-      background-color: #454545;
-      padding: 25px 20px;
+      background-color: #8a8988;
+      padding: 25px;
       border-radius: 12px;
-      text-align: LEFT;
-      display: flex;
-      flex-direction: column;
-      align-items: flex-start;
+      border: 2px solid #ffd500;
+      
     }
-    .reviewcard img {
-      width: 60px;
-      height: 60px;
-      border-radius: 30px;
-      margin-bottom: 10px;
+    .reviewfixtop {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+      margin-bottom: 15px;
+    }
+    .reviewfixtop img {
+      width: 55px;
+      height: 55px;
+      border-radius: 50%;
     }
     .reviewcard h4 {
       font-size: 18px;
@@ -186,29 +189,42 @@
 <!-- Reviews section, below main image -->
     <section id="reviews">
       <h2>Reviews</h2>
+      <p>Just in case my word wasn’t enough. See what others have to say.</p>
 <div class="reviewgrid">
 <!-- Homemademiya Reviewcard -->
   <div class="reviewcard">
+    <div class="reviewfixtop">
     <img src="homemademiya.jpg" alt="homemademiya profilepic">
-    <h4>Homemademiya</h4>
+      <div class="reviewerinfo">
+      <h4>Homemademiya</h4>
     <p class="profession">Mechanic</p>
-    <p class="reviewtext">“I’ve profited every single  time, RB is a real locksmith.”</p>
     </div>
+  </div>
+    <p class="reviewtext">“I’ve profited every single  time, RB is a real locksmith.”</p>
+  </div>
 <!-- Ultrrviolet Review Card -->
-  <div class="reviewcard">
-  <img src="uvlocks.jpg" alt="ultrrviolet profilepic">
-    <h4>Ultrrviolet</h4>
+   <div class="reviewcard">
+    <div class="reviewfixtop">
+    <img src="uvlocks.jpg" alt="ultrrviolet profilepic">
+      <div class="reviewerinfo">
+      <h4>Ultrrviolet</h4>
     <p class="profession">Producer, Songwriter</p>
-    <p class="reviewtext">“I’ve profited every single  time, RB is a real locksmith.”</p>
     </div>
+  </div>
+    <p class="reviewtext">“I only get my picks from RB locks. Genuine bets.”</p>
+  </div>
 <!-- TheZaanman Review Card -->
   <div class="reviewcard">
-  <img src="zaano.jpg" alt="TheZaanman profilepic">
-    <h4>TheZaanMan</h4>
-    <p class="profession">Student, Health Expert</p>
-    <p class="reviewtext">“I’ve profited every single  time, RB is a real locksmith.”</p>
+    <div class="reviewfixtop">
+    <img src="zaano.jpg" alt="TheZaanMan profilepic">
+      <div class="reviewerinfo">
+      <h4>TheZaanMan</h4>
+    <p class="profession">Student, Health expert</p>
     </div>
-      </div>
+  </div>
+    <p class="reviewtext">“I only get my picks from RB locks. Genuine bets.”</p>
+  </div>
+</div>
   </section>
 <!-- "WHAT WE DO" section. 2 columns, photo of pantoja on the right, text left. -->
     <section id="what-we-do" class="twocolumn">
