@@ -130,16 +130,20 @@
 /* Track record preview (For home screen) */
     #record-preview h2{
       font-family: 'Source Serif Pro', serif;
-      margin-top: 120px;
+      margin-top: 200px;
       font-size: 36px;
     }
     .record-grid {
       display: grid;
-      grid-template-columns: 33.33% 33.33% 33.33%
+      grid-template-columns: 33.33% 33.33% 33.33%;
+      gap: 20px;
+      margin: 10px;
     }
     .record-grid img {
       width: 100%;
-      border-radius: 10px;
+      border-radius: 15px;
+      object-fit: cover;
+      height: 650px;
     }
     .button {
       display: block;
@@ -153,7 +157,8 @@
     footer{
       margin-top: 100px;
       padding: 40px 0;
-      text-align: CENTER;
+      text-align: LEFT;
+      border-top: 2px solid #555555;
     }
     footer a {
       color: white;
@@ -251,6 +256,24 @@
         <img src="pantojaa.png" alt="Pantoja Standing with belt">
       </div>
     </section>
+<!-- Landing page track record --> 
+    <section class="record-preview">
+      <h2>Allow me to prove myself</h2>
+    <p>Dont believe the reviews? Let me prove myself with my track record!</p>
+<!-- 3 piece grid with 3 parlays -->
+      <div class="record-grid">
+      <img src="ticket1.png" alt="Track record parlay 1">
+      <img src="ticket2.png" alt="Track record parlay 2">
+      <img src="ticket3.png" alt="Track record parlay 3">
+      </div>
+<!-- LINK BUTTON TO TRACK RECORD HERE -->
+     <a href="#" class="button">Track Record</a>
+    </section>
+    
+<!-- FOOTER -->
+    <footer>
+    <a href="#">RB LOCKS - MMA HUB</a>
+    </footer>
   </div>
   </body>
 </html>
