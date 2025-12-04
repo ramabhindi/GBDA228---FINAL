@@ -69,7 +69,7 @@
       font-family: 'Source Serif Pro';
     }
 /* REVIEW BOX CSS */
-    #review h2 {
+    #reviews h2 {
       font-family: 'Source Serif Pro', serif;
       font-size: 36px;
       margin-top: 80px;
@@ -128,9 +128,9 @@
       border-radius: 12px;
     }
 /* Track record preview (For home screen) */
-    #record-preview h2{
+    .record-preview h2{
       font-family: 'Source Serif Pro', serif;
-      margin-top: 200px;
+      margin-top: 100px;
       font-size: 36px;
     }
     .record-grid {
@@ -175,25 +175,57 @@
       color: white;
       font-weight: 600;
     }
+/* UFC page (Find a fighter) Styling */
+    .divisions-grid {
+      margin-top: 50px;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 30px;
+    }
+    .division-card {
+      background: #454545;
+      border-radius: 15px;
+      overflow: hidden; /*HIDE LEAKING CONTENT*/
+      padding-bottom: 10px;
+      transition: 0.2s; /*Transition time for growing effect*/
+    }
+    .division-card img {
+      width: 100%;
+      height: 150px;
+      object-fit: cover;
+    }
+    .division-card h3 {
+      font-size: 24px;
+      margin: 12px;
+    }
+    .division-card:hover { /*growing effect on mouse hover*/
+      transform: scale(1.05);
+    }
+    .division-card p {
+      margin: 0 12px;
+      color: white;
+      font-size: 16px;
+    }
   </style>
   </head>
   
 <body>
 <!-- Landing page -->
   <section id="landingpage">
-  <div class="container">
+    <div class="container">
  <!-- Header + Navigation bar -->
     <header>
-    <nav>
-      <!-- INSERT LINKsHERE AFTER-->
-      <a href="#">RB LOCKS - MMA Hub</a>
-      <ul>
-        <li><a href="#">UFC</a></li>
-        <li><a href="#">Track Record</a></li>
-      </ul>
-      <a href="#" class="navigationbutton">Up Next</a>
-    </nav>
-    </header>
+        <nav>
+          <a href="#hero">RB LOCKS - MMA Hub</a>
+            <ul>
+              <li><a href="#ufc-page">UFC</a></li>
+              <li><a href=".record-preview">Track Record</a></li>
+              <li><a href="https://www.ufc.com">Official Website</a></li> <!-- Website link-->
+              <li><a href="mailto:rbhindi@uwaterloo.ca">Email Me!</a></li> <!-- my email -->
+          </ul>
+        <a href="#up-next" class="navigationbutton">UP NEXT</a>
+      </nav>
+  </header>
 <!-- Hero section, below header -->
     <section id="hero">
       <h1>RB LOCKS - MMA Sports Betting Hub</h1>
@@ -280,14 +312,14 @@
       <img src="ticket3.png" alt="Track record parlay 3">
       </div>
 <!-- LINK BUTTON TO TRACK RECORD HERE -->
-     <a href="#" class="record-button">Track Record</a>
+     <a href="#record-preview" class="record-button">Track Record</a>
     </section>
     
 <!-- FOOTER -->
     <footer>
     <a href="#">RB LOCKS - MMA HUB</a>
     </footer>
-  </div>
+    </div>
   </section> <!--Closing Home Page -->
 <!-- UFC Page -->
   <section id="ufc-page" style="display:none">
