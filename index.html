@@ -30,8 +30,6 @@
 /* NAVIGATION BAR */
     nav {
       display: flex;
-      position: sticky;
-      /*position: -webkit-sticky;*/
       top: 0;
       align-items: CENTER;
       justify-content: flex-end;
@@ -176,7 +174,7 @@
       border-top: 2px solid #555555;
     }
     footer a {
-      color: white;
+      color: yellow;
       font-weight: 600;
     }
 /* UFC page (Find a fighter) Styling */
@@ -272,12 +270,19 @@
       margin: 4px 0;
       font-size: 15px;
     }
-    .fight-date {
+    .date {
+      display: inline-block;
+      box-sizing: border-box; /*makes a box wrapping text*/
       color: yellow;
+      text-align: left;
+      width: 125px;
+      font-weight: bold;
     }
     .win {
+      display: inline-block;
       color: #57FF57;
       font-weight: bold;
+      text-align: left;
     }
     .loss {
       color: red;
@@ -287,6 +292,11 @@
       margin-top: 10px;
       font-size: 13px;
       color: yellow;
+    }
+    .opponent {
+      display: inline-block;
+      width: 200px;
+      padding-left: 50px;
     }
     #hero p { /*KEPT GETTING A WARNING FROM NETNET, SO MOVING THIS HERE*/
       color: #FFFFFF;
@@ -500,6 +510,9 @@
       
     </div>
   </div>
+    <footer>
+    <a href="#">RB LOCKS - MMA HUB</a>
+    </footer>
 </section> <!-- CLOSING UFC PAGE -->
   
 <section id="welterweight-section" class="welterweight-section"> <!-- WELTERWEIGHT PAGE -->
@@ -520,26 +533,26 @@
          <!-- Manually added space, because im losing my mind trying to fix this-->
         
          <div class="champion-stats">
-           <p><strong>Pro Record:</strong> 28 - 1</p>
-           <p><strong>Born in:</strong> Makhachkala, Russia</p>
+           <p><strong><span style="color: yellow;">Pro Record:</span></strong> 28 - 1</p>
+           <p><strong><span style="color: yellow;">Born in:</span></strong> Makhachkala, Russia</p>
            
            <p>
-              <strong>Height:</strong> 5'10"
+              <strong><span style="color: yellow;">Height:</span></strong> 5'10"
               &nbsp;&nbsp;&nbsp; <!-- Space in between --->
-              <strong>Reach:</strong> 70.85 inches
+             <strong><span style="color: yellow;">Reach:</span></strong> 70.85 inches
           </p>
            
-           <p><strong>Gym:</strong> A.K.A (American Kickboxing Academy)</p>
+           <p><strong><span style="color: yellow;">Gym:</span></strong> A.K.A (American Kickboxing Academy)</p>
         </div>
       
       <h3 class="champhistory-title">Recent Fight History:</h3>
         <div class="fight-history">
-          <p><span class="date">Nov. 15, 2025:</span> Jack Della Maddalena &nbsp; <span class="win">W</span> Decision 🥇</p>
-          <p><span class="date">Jan. 18, 2025:</span> Renato Moicano &nbsp; <span class="win">W</span> Submission 🥇</p>
-          <p><span class="date">June 1, 2024:</span> Dustin Poirier &nbsp; <span class="win">W</span> Submission 🥇</p>
-          <p><span class="date">Oct 21, 2023:</span> Alexander Volkanovski &nbsp; <span class="win">W</span> TKO 🥇</p>
-          <p><span class="date">Feb 11, 2023:</span> Alexander Volkanovski &nbsp; <span class="win">W</span> Decision 🥇</p>
-          <p><span class="date">Oct 22, 2022:</span> Charles Oliveira &nbsp; <span class="win">W</span> Submission 🥇</p>
+          <p><span class="date">Nov. 15, 2025:</span><span class="opponent">Jack Della Maddalena &nbsp;</span><span class="win">W</span> Decision 🥇</p>
+          <p><span class="date">Jan. 18, 2025:</span><span class="opponent">Renato Moicano &nbsp;</span><span class="win">W</span> Submission 🥇</p>
+          <p><span class="date">June 1, 2024:</span><span class="opponent">Dustin Poirier &nbsp;</span><span class="win">W</span> Submission 🥇</p>
+          <p><span class="date">Oct 21, 2023:</span><span class="opponent">Alexander Volkanovski &nbsp;</span><span class="win">W</span> TKO 🥇</p>
+          <p><span class="date">Feb 11, 2023:</span><span class="opponent">Alexander Volkanovski &nbsp;</span><span class="win">W</span> Decision 🥇</p>
+          <p><span class="date">Oct 22, 2022:</span><span class="opponent">Charles Oliveira &nbsp;</span><span class="win">W</span> Submission 🥇</p>
         </div>
       </div>
     </div>
