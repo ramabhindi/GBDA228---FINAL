@@ -217,7 +217,7 @@
     .welterweight-description { /*Section description*/
       max-width: 1050px;
       line-height: 1.6;
-      color: #adadad;
+      color: white;
       margin-bottom: 30px;
     }
     .champion-layout { /*Layout for champion page*/
@@ -297,12 +297,19 @@
     html {
       scroll-behavior: smooth; /* Smooth transition towards other pages */
     }
-    .welterweight-ranking-grid{
+    .rankings-grid {  /* Display grid for the welterweight rankings*/
+      display: grid;
       grid-template-columns: 15% 30% 10% 30% 15%;
+      margin-top: 30px;
+      font-size: 15px;
     }
-    .welterweight-ranking h1 {
-      font-size: 46px;
-    }
+    
+    .number{font-weight: bold} /*SMALL STYLING FOR WELTERWEIGHT WEIGHT RANKINGS*/
+    .ranked-fighter {font-weight: 600}
+    .record {color: white;}
+    .gym {color: white;}
+    .country {font-size: 20px;}
+    
     #hero p { /*KEPT GETTING A WARNING FROM NETNET, SO MOVING THIS HERE*/
       color: #FFFFFF;
       font-size: 18px;
@@ -563,7 +570,7 @@
         </div>
       </div>
       
-      <div class="welterweight-rankings-grid">
+      <div class="rankings-grid">
         
       </div>
       
