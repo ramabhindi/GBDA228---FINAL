@@ -282,7 +282,8 @@
     }
     .loss {
       color: red;
-      font-weight: bold;
+      margin-left: 3px;
+      margin-right: 3px;
     }
     .champnote {
       margin-top: 10px;
@@ -300,15 +301,27 @@
     .rankings-grid {  /* Display grid for the welterweight rankings*/
       display: grid;
       grid-template-columns: 15% 30% 10% 30% 15%;
-      margin-top: 30px;
+      margin-top: 80px;
       font-size: 15px;
+      row-gap: 20px;
+    }
+    .rankings-section { /*making sure grid doesnt go over 1200px*/
+      max-width: 1200px;
+      margin: 0 auto;
     }
     
-    .number{font-weight: bold} /*SMALL STYLING FOR WELTERWEIGHT WEIGHT RANKINGS*/
-    .ranked-fighter {font-weight: 600}
-    .record {color: white;}
-    .gym {color: white;}
-    .country {font-size: 20px;}
+    .number{ /*SMALL STYLING FOR WELTERWEIGHT WEIGHT RANKINGS*/
+      font-weight: bold;
+      color: yellow;
+    } 
+    .fighter-name {font-weight: 600}
+    .record {color: yellow;}
+    .country {color: white;}
+    .last5 {
+      color: #43d124;
+      font-weight: bold;
+      align-content: right;
+    }
     
     #hero p { /*KEPT GETTING A WARNING FROM NETNET, SO MOVING THIS HERE*/
       color: #FFFFFF;
@@ -561,21 +574,83 @@
       
       <h3 class="champhistory-title">Recent Fight History:</h3>
         <div class="fight-history">
-          <p><span class="date">Nov. 15, 2025:</span><span class="opponent">Jack Della Maddalena &nbsp;</span><span class="win">W</span> Decision 🥇</p>
-          <p><span class="date">Jan. 18, 2025:</span><span class="opponent">Renato Moicano &nbsp;</span><span class="win">W</span> Submission 🥇</p>
-          <p><span class="date">June 1, 2024:</span><span class="opponent">Dustin Poirier &nbsp;</span><span class="win">W</span> Submission 🥇</p>
-          <p><span class="date">Oct 21, 2023:</span><span class="opponent">Alexander Volkanovski &nbsp;</span><span class="win">W</span> TKO 🥇</p>
-          <p><span class="date">Feb 11, 2023:</span><span class="opponent">Alexander Volkanovski &nbsp;</span><span class="win">W</span> Decision 🥇</p>
-          <p><span class="date">Oct 22, 2022:</span><span class="opponent">Charles Oliveira &nbsp;</span><span class="win">W</span> Submission 🥇</p>
+          <p><span class="date">Nov. 15, 2025:</span><span class="opponent">Jack Della Maddalena</span><span class="win">W</span> Decision 🥇</p>
+          <p><span class="date">Jan. 18, 2025:</span><span class="opponent">Renato Moicano</span><span class="win">W</span> Submission 🥇</p>
+          <p><span class="date">June 1, 2024:</span><span class="opponent">Dustin Poirier</span><span class="win">W</span> Submission 🥇</p>
+          <p><span class="date">Oct 21, 2023:</span><span class="opponent">Alexander Volkanovski</span><span class="win">W</span> TKO 🥇</p>
+          <p><span class="date">Feb 11, 2023:</span><span class="opponent">Alexander Volkanovski</span><span class="win">W</span> Decision 🥇</p>
+          <p><span class="date">Oct 22, 2022:</span><span class="opponent">Charles Oliveira</span><span class="win">W</span> Submission 🥇</p>
         </div>
       </div>
-      
+    </div>
+    <div class="rankings-section"> <!--Top 10 ranking (below photo of current champ) -->
       <div class="rankings-grid">
         
+        <div class="number">#1</div>      <!-- NUMBER 1 RANKED - JDM -->
+        <div class="fighter-name">Jack Della Maddalena</div>
+        <div class="record">18-3</div>
+        <div class="country">Perth, Australia</div>
+        <div class="last5">W W W W <span style="color: red">L</span></div>
+        
+        <div class="number">#2</div>      <!-- NUMBER 2 RANKED - BELAL MUHAMMAD -->
+        <div class="fighter-name">Belal Muhammad</div>
+        <div class="record">24-5</div>
+        <div class="country">El Bireh, Palestine</div>
+        <div class="last5">W W W<span style="color: red; margin-left: 10px;">L    L</span></div>
+        
+        <div class="number">#3</div>      <!-- NUMBER 3 RANKED - MICHAEL MORALES -->
+        <div class="fighter-name">Michael Morales</div>
+        <div class="record">19-0</div>
+        <div class="country">Pasaje, El Oro, Ecuador</div>
+        <div class="last5">W W W W W</div>
+        
+        <div class="number">#4</div>      <!-- NUMBER 4 RANKED - Shavkat Rakhmonov -->
+        <div class="fighter-name">Shavkat Rakhmonov</div>
+        <div class="record">19-0</div>
+        <div class="country">Kokshetau, Kazakhstan</div>
+        <div class="last5">W W W W W</div>
+        
+        <div class="number">#5</div>      <!-- NUMBER 5 RANKED - CARLOS PRATES -->
+        <div class="fighter-name">Carlos Prates</div>
+        <div class="record">23-7</div>
+        <div class="country">Taubaté, Brazil</div>
+        <div class="last5">W W <span style="color: red; margin: 3px;">L</span>W W</div>
+        
+        <div class="number">#6</div>      <!-- NUMBER 6 RANKED - IAN MACHADO GARRY -->
+        <div class="fighter-name">Ian Machado Garry</div>
+        <div class="record">18-1</div>
+        <div class="country">Dublin, Ireland</div>
+        <div class="last5">W W <span style="color: red; margin: 3px;">L</span>W W</div>
+        
+        <div class="number">#7</div>      <!-- NUMBER 7 RANKED - SEAN BRADY -->
+        <div class="fighter-name">Sean Brady</div>
+        <div class="record">18-2</div>
+        <div class="country">Philadelphia, Pennsylvania </div>
+        <div class="last5"><span style="color: red; margin: 3px;">L</span>W W W W<span style="color: red; margin: 3px;">L</span></div>
+        
+        <div class="number">#8</div>      <!-- NUMBER 8 RANKED - KAMARU USMAN -->
+        <div class="fighter-name">Kamaru Usman</div>
+        <div class="record">21-4</div>
+        <div class="country">Auchi, Nigeria</div>
+        <div class="last5">W <span style="color: red; margin: 3px;">L L L</span> W</div>
+        
+        <div class="number">#9</div>      <!-- NUMBER 9 RANKED - LEON EDWARDS -->
+        <div class="fighter-name">Leon Edwards</div>
+        <div class="record">22-6</div>
+        <div class="country">Birmingham, England</div>
+        <div class="last5">W W<span style="color: red; margin: 3px;">L L L</span></div>
+        
+        <div class="number">#10</div>      <!-- NUMBER 10 RANKED - JOAQUIN BUCKLEY -->
+        <div class="fighter-name">Joaquin Buckley</div>
+        <div class="record">21-7</div>
+        <div class="country">St. Louis, Missouri</div>
+        <div class="last5">W W W W <span style="color: red">L</span></div>
+        
       </div>
-      
-      
     </div>
+      
+      
+
   </section>
   </body>
 </html> 
