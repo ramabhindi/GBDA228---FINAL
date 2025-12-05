@@ -204,24 +204,91 @@
       color: white;
       font-size: 16px;
     }
-    #hero p {
+/* FIND A FIGHTER: WELTERWEIGHT DIVISION STYLING */
+    .welterweight-section { /*Section Wrapping*/
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 40px 20px;
+      color: white;
+    }
+    .welterweight-title { /*Section Title*/
+      color: yellow;
+      font-size: 46px;
+      font-weight: 700;
+      margin-bottom: 10px;
+      font-family: 'Source Serif Pro';
+    }
+    .welterweight-description { /*Section description*/
+      max-width: 700px;
+      line-height: 1.6;
+      color: #adadad;
+      margin-bottom: 30px;
+    }
+    .champion-layout { /*Layout for champion page*/
+      display: flex;
+      align-items: flex-start;
+      gap: 40px;
+    }
+    .champion-photo {
+      width: 420px;
+      border-radius: 14px;
+    }
+    .champion-bio {
+      flex: 1;
+    }
+    .champion-subtitle {
+      color: #FFD500;
+      font-family: "Source Serif Pro";
+      margin-bottom: 5px;
+    }
+    .champion-name {
+      color: yellow;
+      font-size: 42px;
+      margin: 0;
+      line-height: 1;
+    }
+    .champion-icon {
+      font-size: 32px;
+    }
+    .champion-smalltext {
+      color: #a3a3a3;
+      font-size: 14px;
+      margin: 1px 0 12px 0;
+    }
+    .champion-stats p {
+      margin: 6px 0;
+      color: white;
+      font-size: 15px;
+    }
+    .champhistory-title { /*Title for fight history*/
+      margin-top: 22px;
+      color: yellow;
+      font-size: 18px;
+    }
+    .fight-history {
+      margin: 4px 0;
+      font-size: 15px;
+    }
+    .fight-date {
+      color: yellow;
+    }
+    .win {
+      color: #57FF57;
+      font-weight: bold;
+    }
+    .loss {
+      color: red;
+      font-weight: bold;
+    }
+    .champnote {
+      margin-top: 10px;
+      font-size: 13px;
+      color: yellow;
+    }
+    #hero p { /*KEPT GETTING A WARNING FROM NETNET, SO MOVING THIS HERE*/
       color: #FFFFFF;
       font-size: 18px;
       max-width: 700px;
-    }
-/* FIND A FIGHTER: WELTERWEIGHT DIVISION STYLING */
-    .champion-container {
-      display: flex;
-      gap: 20px;
-      margin-top: 20px;
-    }
-    .champion-img {
-      width: 600px;
-      height: auto;
-      border-radius: 14px;
-    }
-    .champion-info {
-      max-width: 500px;
     }
     html {
       scroll-behavior: smooth; /* Smooth transition towards other pages */
@@ -432,29 +499,47 @@
   </div>
 </section> <!-- CLOSING UFC PAGE -->
   
-<section id="welterweight-section"> <!-- WELTERWEIGHT SECTION -->
-  <div class="container">
-
-    <h2 class="weight-title">Welterweight</h2>
-      <p class="weight-description">
-      The strongest and baddest guys weighing in and competing at 156-170lbs. View the champion's path to the belt, and the upcoming prospects in the rankings trying to claim the belt for themselves. A star* indicates a fight for the championship title, either as a title defense, or a win for the belt. The current champ, Islam Makhachev, trained along the best at the AKA gym to tie up Anderson Silva's record for the most consecutive wins in the UFC (16), and hold the pound-for-pound number one spot, while being a two-division champion.
-      </p>
-
-      <div class="champion-container">
-        <img src="currentchamp.jpg" alt="WelterWeight Champion" class="champion-img">
+<section id="welterweight-section" class="welterweight-section"> <!-- WELTERWEIGHT PAGE -->
+   <h2 class="welterweight-title">Welterweight</h2>
+    <p class="welterweight-description">
+      The strongest and baddest guys weighing in and competing at 156-170lbs. View the champion's path to the belt, and the upcoming prospects in the rankings trying to claim the belt for themselves. A medal 🏅 indicates a fight for the championship title, either as a title defense, or a win for the belt. The current champ, Islam Makhachev, trained along the best at the AKA gym to tie up Anderson Silva's record for the most consecutive wins in the UFC (16), and hold the pound-for-pound number one spot, while being a two-division champion.
+  </p>
+    <div class="champion-layout">
+      <img src="currentchamp.jpg" class="champion-photo" alt="Welterweight Champion">  <!-- Photo of Islam Makhachev-->
+       <div class="champion-bio">
         
-      <div class="champion-info">
-        <h3>Current Champion: Islam Makhachev 🏆</h3>
-          <p><strong>Record:</strong>28-1</p>
-          <p><strong>Height:</strong> 5'10" &nbsp; <strong>Reach:</strong> 70.8"</p>
-          <p><strong>Age:</strong>34</p>
-          <p><strong>Gym:</strong>AKA (American Kickboxing Academy</p>
-          <p><strong>Fighting out of: Makhachkala, Russia</strong></p>
+         <p class="champion-subtitle">Current champion:</p> <!--Champion name and trophy symbol-->
+         <h2 class="champion-name">Islam Makhachev<span class="champion-icon">🏆</span></h2>
+         
+         <p class="champion-smalltext">Wrestler, Combat Sambo &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+           &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          Southpaw</p>       
+         <!-- Manually added space, because im losing my mind trying to fix this-->
+        
+         <div class="champion-stats">
+           <p><strong>Pro Record:</strong> 28 - 1</p>
+           <p><strong>Born in:</strong> Makhachkala, Russia</p>
+           
+           <p>
+              <strong>Height:</strong> 5'10"
+              &nbsp;&nbsp;&nbsp; <!-- Space in between --->
+              <strong>Reach:</strong> 70.85 inches
+          </p>
+           
+           <p><strong>Gym:</strong> A.K.A (American Kickboxing Academy)</p>
         </div>
-        
+      
+      <h3 class="champhistory-title">Recent Fight History:</h3>
+        <div class="fight-history">
+          <p><span class="date">Nov. 15, 2025:</span> Jack Della Maddalena &nbsp; <span class="win">W</span> Decision 🥇</p>
+          <p><span class="date">Jan. 18, 2025:</span> Renato Moicano &nbsp; <span class="win">W</span> Submission 🥇</p>
+          <p><span class="date">June 1, 2024:</span> Dustin Poirier &nbsp; <span class="win">W</span> Submission 🥇</p>
+          <p><span class="date">Oct 21, 2023:</span> Alexander Volkanovski &nbsp; <span class="win">W</span> TKO 🥇</p>
+          <p><span class="date">Feb 11, 2023:</span> Alexander Volkanovski &nbsp; <span class="win">W</span> Decision 🥇</p>
+          <p><span class="date">Oct 22, 2022:</span> Charles Oliveira &nbsp; <span class="win">W</span> Submission 🥇</p>
+        </div>
       </div>
     </div>
   </section>
-  
   </body>
-</html>
+</html> 
