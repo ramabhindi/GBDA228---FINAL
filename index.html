@@ -172,6 +172,25 @@
       margin-top: 30px;
       margin-left: 12px;
     }
+    .track-record { /*ACTUAL Track record section*/
+      padding: 80px 0;
+    }
+    .record-subtitle {
+      font-size: 28px;
+      margin-top: 40px;
+      margin-bottom: 20px;
+      color: yellow;
+      font-family: 'Source Serif Pro', serif;
+    }
+    .record-card {
+      text-align: center;
+    }
+
+.record-caption {
+  margin-top: 10px;
+  color: lightgray;
+  font-size: 14px;
+}
 /* Footer */
     footer{
       margin-top: 100px;
@@ -341,6 +360,7 @@
       margin-bottom: 50px;
     }
     
+    
     #hero p { /*KEPT GETTING A WARNING FROM NETNET, SO MOVING THIS HERE*/
       color: #FFFFFF;
       font-size: 18px;
@@ -376,7 +396,7 @@
     
 <!-- Hero section, below header -->
     <section id="hero">
-      <h1>RB LOCKS - MMA Sports Betting Hub aaa</h1>
+      <h1>RB LOCKS - MMA Sports Betting Hub</h1>
       <p>Welcome to RB LOCKS MMA, a center for fight news and updates, betting action, line movements, fighter picks, and statistics.</p>
       
       <div class="up-next-card">
@@ -673,13 +693,43 @@
         <div class="country">St. Louis, Missouri</div>
         <div class="last5">W W W W <span style="color: red">L</span></div>
         
-        
-
       </div>
       <footer>
     <a href="#">RB LOCKS - MMA HUB</a>
     </footer>
     </div>
+  </section> <!-- CLOSING WELTERWEIGHT RANKING SECTION -->
+  <!-- OPENING TRACK RECORD SECTION -->
+  <section id="track-record" class="track-record">
+    <div class="container">
+      
+    <h2><span style="color: yellow; font-size: 48px; font-family: 'Source Serif Pro';">Track Record</span></h2>
+    <p>Betting record, biggest wins, upcoming bets and close misses.</p>
+      
+    <!-- RECENT WINS -->
+    <h3 class="record-subtitle">Most Recent Bets:</h3>
+    
+      <div class="record-grid"> <!--WRAPPING PHOTOS INTO SAME GRID AS PREVIEW-->
+        <div class="record-card">
+           <img src="recordparlay1.jpeg" alt="Recent Win 1"> <!-- Recent bet 1-->
+           <p class="record-caption">+800 on UFC 322</p>
+        </div>
+        
+        <div class="record-card">
+           <img src="recordparlay2.jpeg" alt="Recent Win 2"> <!-- Recent bet 2-->
+           <p class="record-caption">+1200 on Fight Night</p>
+        </div>
+        
+        <div class="record-card">
+           <img src="ticket3.png" alt="Recent Win 3">  <!-- Recent bet 3-->
+           <p class="record-caption">+3000 on UFC 320</p>
+        </div>  
+      </div> 
+    
+    
+    
+    </div>
   </section>
+  
   </body>
 </html> 
